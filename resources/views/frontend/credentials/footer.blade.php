@@ -1,5 +1,5 @@
   <div class="footer_area  footer_nine" id="footer_contents">
-      <div class="footer_widgets_wrap bg_op_1" style="background: url(assets/images/footer-9.jpg);">
+      <div class="footer_widgets_wrap bg_op_1" style="background: url({{ asset('assets') }}/images/footer-9.jpg);">
           <!--===============spacing==============-->
           <div class="pd_top_80"></div>
           <!--===============spacing==============-->
@@ -18,7 +18,7 @@
                                       repudiated annoyances endures accepted.</p>
                                   <div class="consulting">
                                       <div class="image">
-                                          <img src="assets/images/authour-image.png" alt="need help" />
+                                          <img src="{{ asset('assets') }}/images/authour-image.png" alt="need help" />
                                       </div>
                                       <div class="help_con">
                                           <h6>Need Help?</h6>
@@ -113,7 +113,7 @@
 
                               <div class="news_recent clearfix  image_s  ">
                                   <div class="image ">
-                                      <img width="750" height="420" src="assets/images/blog/blog-image-9.jpg"
+                                      <img width="750" height="420" src="{{ asset('assets') }}/images/blog/blog-image-9.jpg"
                                           class="img-fluid" alt="img" loading="lazy">
                                   </div>
                                   <div class="content ">
@@ -125,7 +125,7 @@
                               </div>
                               <div class="news_recent clearfix  image_s  ">
                                   <div class="image ">
-                                      <img width="750" height="420" src="assets/images/blog/blog-image-8.jpg"
+                                      <img width="750" height="420" src="{{ asset('assets') }}/images/blog/blog-image-8.jpg"
                                           class="img-fluid" alt="img" loading="lazy">
                                   </div>
                                   <div class="content ">

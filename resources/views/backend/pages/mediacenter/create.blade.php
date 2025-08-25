@@ -35,8 +35,8 @@
                                     <div class="form-group">
                                         <label style="font-weight: bold;"> Description:</label>
                                         <textarea class="form-control descriptionid1" placeholder="Enter Description"  row="3" name="description"></textarea>
-                                    
-                                      
+
+
                                     </div>
                                     {{-- <input type="hidden" name="description" id="hidden-editor-input"> --}}
                                 </div>
@@ -80,9 +80,9 @@
                                   </div>
                                   <div class="col-12">
                                     <div class="form-group">
-                                        <label style="font-weight: bold;"> Description:</label>
-                                        <textarea class="form-control descriptionid1" placeholder="Enter Description"  row="3" name="meta_description"></textarea>
-                                        
+                                        <label style="font-weight: bold;">Meta Description:</label>
+                                      <input type="text" name="meta_description" value="{{ old('meta_description') }}" class="form-control">
+
                                         {{-- <label class="form-label">Meta Description</label>
                                         <div id="meta_description_editor" name="meta_description">{{ old('meta_description') }}</div>
                                         @error('meta_description')
@@ -91,7 +91,7 @@
                                         <input type="hidden" name="meta_description" id="hidden_meta_description_input"> --}}
                                     </div>
                                 </div>
-                      
+
                                   <div class="col-12 d-flex justify-content-end">
                                       <button type="submit" name="submit" class="btn btn-primary me-1 mb-1">
                                           Add Media Center
@@ -103,21 +103,21 @@
                               </div>
                           </div>
                       </form>
-                      
+
                       </div>
                     </div>
                   </div>
                 </div>
-               
+
               </div>
             </section>
-            
+
           </div>
     </div>
- 
-   
 
-  
+
+
+
   </div>
   <!-- Include CKEditor script -->
   {{-- <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
@@ -127,18 +127,18 @@
       CKEDITOR.replace('editor', {
           // Your CKEditor configuration options, if any
       });
-  
+
       // Update form submission to include 'editor' CKEditor content
       document.getElementById('your-form-id').addEventListener('submit', function() {
           var editorContent = CKEDITOR.instances.editor.getData();
           document.getElementById('hidden-editor-input').value = editorContent;
       });
-  
+
       // Initialize CKEditor for 'meta_description'
       CKEDITOR.replace('meta_description_editor', {
           // Your CKEditor configuration options for 'meta_description', if any
       });
-  
+
       // Update form submission to include 'meta_description' CKEditor content
       document.getElementById('your-form-id').addEventListener('submit', function() {
           var metaDescriptionContent = CKEDITOR.instances.meta_description_editor.getData();

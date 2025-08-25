@@ -80,7 +80,7 @@ class HomeController extends Controller
 
     public function mediacenter()
     {
-        $fetch = MediaCenter::all();
+        $fetch = MediaCenter::paginate(8);
         return view('frontend.pages.mediacenter', compact('fetch'));
     }
     public function mediacenterdetail($slug)
@@ -160,10 +160,10 @@ class HomeController extends Controller
         $contactmodel->phone = $req->phone;
         $contactmodel->message = $req->message;
         $contactmodel->save();
-    
+
         // Send thank you email
         Mail::to($req->email)->send(new ContactUsThankYouMail($req->name));
-    
+
         return redirect()->back()->with('message', "Your Message Has Been Sent...");
     }
 
@@ -223,10 +223,10 @@ class HomeController extends Controller
         $request->validate([
             'cv' => 'mimes:pdf,doc,docx,xlsx,xls,jpg,jpeg,png|max:2048', // Adjust the allowed file types and size
         ]);
-    
+
         // Find the job by slug
         $job = Job::where('slug', $slug)->firstOrFail();
-    
+
         // Create a new application
         $application = new Application([
             // 'user_id' => Auth::user()->id,
@@ -238,26 +238,26 @@ class HomeController extends Controller
             'country' => $request->input('country'),
             'coverletter' => $request->input('coverletter'),
         ]);
-    
+
         if ($request->hasFile('cv')) {
             $file = $request->file('cv');
             $filename = time() . '_' . $file->getClientOriginalName(); // Adjust filename if needed to avoid conflicts
-    
+
             // Move the file to the uploads folder
             $file->move('uploads/resumes/', $filename);
-    
+
             // Save the file name to the database
             $application->cv = $filename;
         }
-    
+
         $application->save();
-    
+
         // Send confirmation email
         Mail::to($request->input('email'))->send(new ApplicationReceivedMail($application));
-    
+
         return redirect()->back()->with('message', 'Application Submited successfully!');
     }
-    
+
     public function store(Request $request)
     {
         $ipAddress = $request->ip();
@@ -272,5 +272,5 @@ class HomeController extends Controller
 
         return response()->json(['message' => 'Consent status stored successfully.']);
     }
-    
+
 }
