@@ -5,25 +5,26 @@
  {{-- <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets') }}/img/favicon.png"> --}}
 
  <!-- CSS here -->
-        <!--<link rel="shortcut icon" href="{{ asset('assets') }}/img/preloader.svg">-->
-        <!--<< Bootstrap min.css >>-->
-        <link rel="stylesheet" href="{{ asset('assets') }}/css/bootstrap.min.css">
-        <!--<< Font Awesome.css >>-->
-        <link rel="stylesheet" href="{{ asset('assets') }}/css/font-awesome.css">
-        <!--<< Animate.css >>-->
-        <link rel="stylesheet" href="{{ asset('assets') }}/css/animate.css">
-        <!--<< Magnific Popup.css >>-->
-        <link rel="stylesheet" href="{{ asset('assets') }}/css/magnific-popup.css">
-        <!--<< MeanMenu.css >>-->
-        <link rel="stylesheet" href="{{ asset('assets') }}/css/meanmenu.css">
-        <!--<< Slick.css >>-->
-        <link rel="stylesheet" href="{{ asset('assets') }}/css/slick.css">
-        <!--<< Nice Select.css >>-->
-        <link rel="stylesheet" href="{{ asset('assets') }}/css/nice-select.css">
-        <!--<< Main.css >>-->
-        <link rel="stylesheet" href="{{ asset('assets') }}/css/main.css">
-        <!--<< Style.css >>-->
-        <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css">
+   <link rel="icon" href="{{ asset('assets') }}/images/favicon.ico" type="image/x-icon">
+   <!-- Fav Icon -->
+   <!-- Google Fonts -->
+   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Spartan%3A400%2C500%2C600%2C700%2C800%2C900%7CInter%3A300%2C400%2C500%2C600%2C700%2C800%2C900&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+   <!-- Google Fonts -->
+   <!-- Style -->
+   <link rel='stylesheet' href='{{ asset('assets') }}/css/bootstrap.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='{{ asset('assets') }}/css/owl.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='{{ asset('assets') }}/css/swiper.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='{{ asset('assets') }}/css/jquery.fancybox.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='{{ asset('assets') }}/css/icomoon.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='{{ asset('assets') }}/css/flexslider.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='{{ asset('assets') }}/css/font-awesome.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='{{ asset('assets') }}/css/style.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='{{ asset('assets') }}/css/scss/elements/theme-css.css' type='text/css' media='all' />
+   <link rel='stylesheet' id="creote-color-switcher-css" href='{{ asset('assets') }}/css/scss/elements/color-switcher/color.css' type='text/css' media='all' />
+   <!-- Style-->
+   <!----woocommerce---->
+   <link rel='stylesheet' href='{{ asset('assets') }}/css/woocommerce-layout.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='{{ asset('assets') }}/css/woocommerce.css' type='text/css' media='all' />
 </head>
 
 

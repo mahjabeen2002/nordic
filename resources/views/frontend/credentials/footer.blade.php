@@ -1,96 +1,199 @@
-<footer class="footer-section footer-bg section">
-    <div class="container">
-        
-        <div class="footer-widgets-wrapper">
-            <div class="row">
-                <div class="col-xl-3 col-sm-6 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".2s">
-                    <div class="single-footer-widget">
-                        <div class="widget-head">
-                            <a href="/">
-                            <img src="{{ asset('assets') }}/img/logowhite.png" alt="logo-img">
-                            </a>
-                        </div>
-                        <div class="footer-content">
-                            <p>
-                                We believe it has the power to do <br>
-                                amazing things.
-                            </p>
-                            <span>Interested in working with us?</span> <br>
-                            <a  class="link" href="mailto:info@techscouts.se"target="_blank" style="color:grey" >info@techscouts.se</a>
-                            <div class="social-icon d-flex align-items-center">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                              <a href="https://www.linkedin.com/company/tech-scouts-sweden-ab/"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="single-footer-widget">
-                        <div class="widget-head">
-                            <h5>Quick Links</h5>
-                        </div>
-                        <ul class="list-items">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/about-us">About Us</a></li>
-                            <li><a href="/team">Team</a></li>
-                            <li><a href="/contact-us">Contact Us</a></li>
-                            <li><a href="/get-a-quote">Get A Quote</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".6s">
-                    <div class="single-footer-widget">
-                        <div class="widget-head">
-                            <h5>My account</h5>
-                        </div>
-                        <ul class="list-items">
-                            <li><a href="/services">Services</a></li>
-                            <li><a href="/mediacenter">Media Center</a></li>
-                            <li><a href="/our-jobs">Career</a></li>
-                            <li><a href="/privacy-policy">Privacy Policy</a></li>
-                            <li><a href="/terms-and-conditions">Terms And Conditions</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".8s">
-                    <div class="single-footer-widget">
-                        <div class="widget-head">
-                            <h5>Address:</h5>
-                        </div>
-                        <div class="footer-address-text">
-                            <p > <a target="_blank" href="https://maps.app.goo.gl/s7bzYQttWBVKWe6RA?g_st=iw" style="color:grey">
-                               Finlandsgatan 10 164 74 Kista Stockholm Sweden
-                           </a> </p>
-                            <h5>Contact:</h5>
-                            <p> <a href="tel:0046 (0) 12221116" target="_blank" style="color:grey">
-                               0046 (0) 12221116
-                          </a>  </p>
-                        </div>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="footer-wrapper text-center">
-                        <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
-                            <br>
-                            Copyright © 2024 <a href="/">Tech Scouts</a>. All Rights Reserved | Developed By <a href="https://growdigitalcare.com/" target="_blank"><span>Grow Digital Care</span></a>
-                        </p>
-               
-                    </div>
-                </div>
-            </div>
-          
-        </div>
-        <a href="#" id="scrollUp" class="scroll-icon">
-            <i class="far fa-arrow-up"></i>
-        </a>
-    </div>
-</footer>
+  <div class="footer_area  footer_nine" id="footer_contents">
+      <div class="footer_widgets_wrap bg_op_1" style="background: url(assets/images/footer-9.jpg);">
+          <!--===============spacing==============-->
+          <div class="pd_top_80"></div>
+          <!--===============spacing==============-->
+          <div class="auto-container">
+              <div class="row">
+                  <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
+                      <div class="footer_widgets wid_tit style_one">
+                          <div class="fo_wid_title">
+                              <h2>About Company</h2>
+                          </div>
+                      </div>
+                      <div class="footer_widgets about_company light_color">
+                          <div class="about_company_inner">
+                              <div class="content_box">
+                                  <p>Duty the obligations of business will frequently occur that pleasure have too
+                                      repudiated annoyances endures accepted.</p>
+                                  <div class="consulting">
+                                      <div class="image">
+                                          <img src="assets/images/authour-image.png" alt="need help" />
+                                      </div>
+                                      <div class="help_con">
+                                          <h6>Need Help?</h6>
+                                          <h2>
+                                              <a href="#" target="_blank" rel="nofollow"> Free Consultation</a>
+                                          </h2>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                      <div class="footer_widgets wid_tit style_one">
+                          <div class="fo_wid_title">
+                              <h2>Company</h2>
+                          </div>
+                      </div>
+                      <div class="footer_widgets clearfix navigation_foo light_color style_one">
+                          <div class="navigation_foo_box">
+                              <div class="navigation_foo_inner">
+                                  <div class="menu-company-container">
+                                      <ul id="menu-company" class="menu">
+                                          <li><a href="#">Home</a></li>
+                                          <li><a href="#">About Us</a></li>
+                                          <li><a href="#">Contact</a></li>
+                                          <li><a href="#">Professionals</a></li>
+                                          <li><a href="#">Insights</a></li>
+                                          <li><a href="#">HR Solutions</a></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                      <div class="footer_widgets wid_tit style_one">
+                          <div class="fo_wid_title">
+                              <h2>Information</h2>
+                          </div>
+                      </div>
+                      <div class="footer_widgets clearfix navigation_foo light_color style_one">
+                          <div class="navigation_foo_box">
+                              <div class="navigation_foo_box">
+                                  <div class="navigation_foo_inner">
+                                      <div class="menu-information-container">
+                                          <ul class="menu">
+                                              <li class="menu-item"><a href="#">How it’s Work</a></li>
+                                              <li class="menu-item"><a href="#">Partners</a></li>
+                                              <li class="menu-item"><a href="#">Testimonials</a></li>
+                                              <li class="menu-item"><a href="#">Key Areas</a></li>
+                                              <li class="menu-item"><a href="#">Case Studies</a></li>
+                                              <li class="menu-item"><a href="#">Pricing</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                      <div class="footer_widgets wid_tit style_one">
+                          <div class="fo_wid_title">
+                              <h2>Essentials</h2>
+                          </div>
+                      </div>
+                      <div class="footer_widgets clearfix navigation_foo light_color style_one">
+                          <div class="navigation_foo_box">
+                              <div class="navigation_foo_inner">
+                                  <div class="menu-essentials-container">
+                                      <ul class="menu">
+                                          <li class="menu-item"><a href="#">Careers</a></li>
+                                          <li class="menu-item"><a href="#">Infrastructure</a></li>
+                                          <li class="menu-item"><a href="#">Client Support</a></li>
+                                          <li class="menu-item"><a href="#">Privacy Policy</a></li>
+                                          <li class="menu-item"><a href="#">Terms of Use</a></li>
+                                          <li class="menu-item"><a href="#">Sitemap</a></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
+                      <div class="footer_widgets wid_tit style_one">
+                          <div class="fo_wid_title">
+                              <h2>Recent Posts</h2>
+                          </div>
+                      </div>
+                      <div class="footer_widgets recent_news_em_wp style_two clearfix">
+                          <div class="news_boxed light_color">
 
+                              <div class="news_recent clearfix  image_s  ">
+                                  <div class="image ">
+                                      <img width="750" height="420" src="assets/images/blog/blog-image-9.jpg"
+                                          class="img-fluid" alt="img" loading="lazy">
+                                  </div>
+                                  <div class="content ">
+                                      <a class="date"><span class="fa fa-clock-o"></span>October 8, 2023</a>
+                                      <h2 class="title"><a href="blog-single.html" rel="bookmark">Why Should Business
+                                              Payroll
+                                              Outsourcing?</a></h2>
+                                  </div>
+                              </div>
+                              <div class="news_recent clearfix  image_s  ">
+                                  <div class="image ">
+                                      <img width="750" height="420" src="assets/images/blog/blog-image-8.jpg"
+                                          class="img-fluid" alt="img" loading="lazy">
+                                  </div>
+                                  <div class="content ">
+                                      <a class="date"><span class="fa fa-clock-o"></span>October 8, 2023</a>
+                                      <h2 class="title"><a href="blog-single.html" rel="bookmark">Most Employees
+                                              Support
+                                              Measures</a></h2>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!--===============spacing==============-->
+          <div class="pd_bottom_50"></div>
+          <!--===============spacing==============-->
+      </div>
+      <div class="footer-copyright bg_dark_3">
+          <!--===============spacing==============-->
+          <div class="pd_top_20"></div>
+          <!--===============spacing==============-->
+          <div class="auto-container">
+              <div class="row align-items-center">
+                  <div class="col-lg-6 col-md-12">
+                      <div class="footer_copy_content">
+                          © 2023 <a href="https://themeforest.net/user/steelthemes">Steelthemes.</a>. All Rights
+                          Reserved.
+                      </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                      <div class="footer_copy_content_right text-md-end">
+                          <div class="social_media_v_one">
+                              <ul>
+                                  <li>
+                                      <a href="#">
+                                          <span class="fa fa-facebook"></span>
+                                          <small>facebook</small>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#">
+                                          <span class="fa fa-twitter"></span>
+                                          <small>twitter</small>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#">
+                                          <span class="fa fa-skype"></span>
+                                          <small>skype</small>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#">
+                                          <span class="fa fa-instagram"></span>
+                                          <small>instagram</small>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
 
+                  </div>
+              </div>
+          </div>
+          <!--===============spacing==============-->
+          <div class="pd_bottom_20"></div>
+          <!--===============spacing==============-->
+      </div>
+  </div>
+  <!---====

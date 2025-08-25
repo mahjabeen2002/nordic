@@ -1,31 +1,29 @@
 
-<script src="{{ asset('assets') }}/js/jquery-3.7.1.min.js"></script>
-<!--<< Viewport Js >>-->
-<script src="{{ asset('assets') }}/js/viewport.jquery.js"></script>
-<!--<< Bootstrap Js >>-->
-<script src="{{ asset('assets') }}/js/bootstrap.bundle.min.js"></script>
-<!--<< Nice Select Js >>-->
-<script src="{{ asset('assets') }}/js/jquery.nice-select.min.js"></script>
-<!--<< Waypoints Js >>-->
-<script src="{{ asset('assets') }}/js/jquery.waypoints.js"></script>
-<!--<< Counterup Js >>-->
-<script src="{{ asset('assets') }}/js/jquery.counterup.min.js"></script>
-<!--<< Slick Js >>-->
-<script src="{{ asset('assets') }}/js/slick.min.js"></script>
-<!--<< Slick Animation Js >>-->
-<script src="{{ asset('assets') }}/js/slick-animation.min.js"></script>
-<!--<< MeanMenu Js >>-->
-<script src="{{ asset('assets') }}/js/jquery.meanmenu.min.js"></script>
-<!--<< Magnific Popup Js >>-->
-<script src="{{ asset('assets') }}/js/jquery.magnific-popup.min.js"></script>
-<!--<< Wow Animation Js >>-->
-<script src="{{ asset('assets') }}/js/wow.min.js"></script>
-<!--<< Circle Progress Js >>-->
-<script src="{{ asset('assets') }}/js/circle-progress.js"></script>
-<!--<< Main.js >>-->
-<script src="{{ asset('assets') }}/js/main.js"></script>
+{{-- <script src="{{ asset('assets') }}/js/jquery-3.7.1.min.js"></script> --}}
 
 
+<!---========================== javascript ==========================-->
+<script type='text/javascript' src='{{ asset('assets') }}/js/jquery-3.6.0.min.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/jquery.fancybox.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/jQuery.style.switcher.min.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/jquery.flexslider-min.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/color-scheme.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/owl.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/swiper.min.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/isotope.min.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/countdown.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/simpleParallax.min.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/appear.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/jquery.countTo.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/sharer.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/validation.js'></script>
+<!-- map script -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
+<script src="{{ asset('assets') }}/js/gmaps.js"></script>
+<script src="{{ asset('assets') }}/js/map-helper.js"></script>
+<!-- main-js -->
+<script type='text/javascript' src='{{ asset('assets') }}/js/creote-extension.js'></script>
 {{-- <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 <div class="elfsight-app-37d5a27c-dd16-4a07-8ab7-28f713e7cf99" data-elfsight-app-lazy></div> --}}
 

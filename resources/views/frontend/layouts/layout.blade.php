@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<!--<html lang="en">-->
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <!--<meta http-equiv="x-ua-compatible" content="ie=edge">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="canonical" href="https://growdigitalcare.com/">
-     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets') }}/img/favicon.png">
-@yield('title')
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <!-- Dynamic Meta Tags -->
+    @yield('meta-tags')
+    @yield('title')
+
     @include('frontend.credentials.header')
 </head>
 
-<body>
-    @include('frontend.credentials.navbar')
-    @yield('content')
+<body class="theme-creote">
+    
 
-    @include('frontend.credentials.footer')
+    <div id="page" class="page_wapper hfeed site">
+
+      <div id="wrapper_full" class="content_all_warpper">
+            @include('frontend.credentials.navbar') <!-- Use either include or inline, not both -->
+            @yield('content')
+        </div>
+
+        @include('frontend.credentials.footer') <!-- Use either include or inline, not both -->
+    </div>
+
     @include('frontend.credentials.script')
 </body>
 </html>
