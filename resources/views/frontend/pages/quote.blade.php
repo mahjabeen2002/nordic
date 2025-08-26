@@ -20,7 +20,7 @@
     <meta name="twitter:image" content="https://techscouts.se/Tech-Scouts-Logo1000x300.png" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Structured Data (Schema.org) -->
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -42,107 +42,101 @@
 </head>
 
 @endsection
+
 @section('content')
-<div class="breadcrumb-wrapper section-padding bg-cover" style="background-image: url('{{ asset('assets') }}/img/breadcrumb.jpg'); height: 80px; display: flex; align-items: center; justify-content: center;">
-    <div class="container">
-        <div class="page-heading">
-            <h1 class="wow fadeInUp" data-wow-delay=".3s"> Get In Touch</h1>
-            <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
-                <li>
-                    <a href="/">
-                 Home
-                    </a>
-                </li>
-                <li>
-                    <i class="fal fa-minus"></i>
-                </li>
-                <li>
-                   Get In Touch
-                </li>
-            </ul>
+<!-- Page Header Section -->
+<div class="page_header_default style_one">
+    <div class="parallax_cover">
+        <div class="simpleParallax">
+            <img src="{{ asset('assets') }}/img/breadcrumb.jpg" alt="bg_image" class="cover-parallax">
+        </div>
+    </div>
+    <div class="page_header_content">
+        <div class="auto-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner_title_inner">
+                        <div class="title_page">Get A Quote</div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="breadcrumbs creote">
+                        <ul class="breadcrumb m-auto">
+                            <li><a href="/">Home</a></li>
+                            <li class="active">Get A Quote</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-<!-- ./ Page Header -->
 
-
-<section class="team-contact-area ">
+<!-- Quote Form Section -->
+<section class="contact-section">
+    <div class="pd_top_90"></div>
     <div class="container">
-        <div class="team-contact-wrapper">
-            <div class="row">
-             
-                <div class="col-lg-12">
-                    <div class="contact-box">
-                        <div class="contact-title">
-                            <h3 class="wow fadeInUp" data-wow-delay=".3s">Need Help For Project!</h3>
-                            <p class="wow fadeInUp" data-wow-delay=".5s">We are ready to help your next projects, let’s work together</p>
-                        </div>
-                        <div class="contact-form-items">
-                            <form action="{{ route('quote.post') }}" method="post"  class="form-horizontal">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center mb-4">
+                <h2 class="section-title">Need Help For Project!</h2>
+                <p class="section-subtitle">We are ready to help your next projects, let’s work together</p>
+            </div>
+            <div class="col-md-12">
+                <div class="contact_form_box_all type_one">
+                    <div class="contact_form_box_inner">
+                        <div class="contact_form_shortcode">
+                            <form action="{{ route('quote.post') }}" method="post" class="form-horizontal">
                                 @csrf
-                                <div class="row g-3">
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                                        <div class="form-clt">
-                                            <input type="text" name="name" id="name" placeholder="Name">
-                                            <div class="icon">
-                                                <i class="far fa-user"></i>
-                                            </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Your Name</label>
+                                            <input type="text" name="name" placeholder="Name*" required>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                                        <div class="form-clt">
-                                            <input type="text" name="company_name" id="company_name" placeholder="Company Name">
-                                            <div class="icon">
-                                                <i class="far fa-users"></i>
-                                            </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Company Name</label>
+                                            <input type="text" name="company_name" placeholder="Company Name">
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                                        <div class="form-clt">
-                                            <input type="text" name="email" id="email" placeholder="Email">
-                                            <div class="icon">
-                                                <i class="far fa-envelope"></i>
-                                            </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="email" name="email" placeholder="Email*" required>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                                        <div class="form-clt">
-                                            <select class="form-control" name="services_id" id="pet-select">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Select Service</label>
+                                            <select name="services_id" required>
                                                 <option value="">Select Service</option>
                                                 @foreach ($services as $fs)
-                                                        <option value="{{ $fs->id }}">{{ $fs->id }}. {{ $fs->name }}</option>
-                                                        @endforeach
+                                                    <option value="{{ $fs->id }}">{{ $fs->id }}. {{ $fs->name }}</option>
+                                                @endforeach
                                             </select>
-                                         </div>
-                                    </div>
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                                        <div class="form-clt">
-                                            <input type="text" name="address" id="address" placeholder="Address">
-                                            <div class="icon">
-                                                <i class="far fa-address"></i>
-                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                                        <div class="form-clt">
-                                            <input type="text" name="contact_no" id="contact_no" placeholder="Contact No">
-                                            <div class="icon">
-                                                <i class="far fa-phone"></i>
-                                            </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Address</label>
+                                            <input type="text" name="address" placeholder="Address">
                                         </div>
                                     </div>
-                                    <div class="col-lg-12 wow fadeInUp" data-wow-delay=".5s">
-                                        <div class="form-clt">
-                                            <textarea name="comments" id="comments" placeholder="Write Your Message"></textarea>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Contact No</label>
+                                            <input type="text" name="contact_no" placeholder="Contact No*" required>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12 wow fadeInUp" data-wow-delay=".4s">
-                                        <button type="submit" class="theme-btn center d-block">
-                                           <span>
-                                            Send Us Messages
-                                            <i class="fas fa-chevron-right"></i>
-                                           </span>
-                                        </button>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Your Message</label>
+                                            <textarea name="comments" rows="4" placeholder="Write Your Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="theme_btn">Send Us Message</button>
                                     </div>
                                 </div>
                             </form>
@@ -152,5 +146,7 @@
             </div>
         </div>
     </div>
+
+    <div class="pd_bottom_90"></div>
 </section>
 @endsection

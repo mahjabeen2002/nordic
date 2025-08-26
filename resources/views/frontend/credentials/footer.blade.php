@@ -14,8 +14,9 @@
                       <div class="footer_widgets about_company light_color">
                           <div class="about_company_inner">
                               <div class="content_box">
-                                  <p>Duty the obligations of business will frequently occur that pleasure have too
-                                      repudiated annoyances endures accepted.</p>
+                                  <p>Nordic IT HUB AB —Your Strategic Partner in IT 
+Management, Governance, and Digital 
+Transformation</p>
                                   <div class="consulting">
                                       <div class="image">
                                           <img src="{{ asset('assets') }}/images/authour-image.png" alt="need help" />
@@ -42,9 +43,9 @@
                               <div class="navigation_foo_inner">
                                   <div class="menu-company-container">
                                       <ul id="menu-company" class="menu">
-                                          <li><a href="#">Home</a></li>
-                                          <li><a href="#">About Us</a></li>
-                                          <li><a href="#">Contact</a></li>
+                                          <li><a href="/">Home</a></li>
+                                          <li><a href="{{route('about-us')}}">About Us</a></li>
+                                          <li><a href="{{route('contact-us')}}">Contact</a></li>
                                           <li><a href="#">Professionals</a></li>
                                           <li><a href="#">Insights</a></li>
                                           <li><a href="#">HR Solutions</a></li>
@@ -66,9 +67,9 @@
                                   <div class="navigation_foo_inner">
                                       <div class="menu-information-container">
                                           <ul class="menu">
-                                              <li class="menu-item"><a href="#">How it’s Work</a></li>
+                                              <li class="menu-item"><a href="{{route('about-us')}}">How it’s Work</a></li>
                                               <li class="menu-item"><a href="#">Partners</a></li>
-                                              <li class="menu-item"><a href="#">Testimonials</a></li>
+                                              <li class="menu-item"><a href="/">Testimonials</a></li>
                                               <li class="menu-item"><a href="#">Key Areas</a></li>
                                               <li class="menu-item"><a href="#">Case Studies</a></li>
                                               <li class="menu-item"><a href="#">Pricing</a></li>
@@ -93,9 +94,7 @@
                                           <li class="menu-item"><a href="#">Careers</a></li>
                                           <li class="menu-item"><a href="#">Infrastructure</a></li>
                                           <li class="menu-item"><a href="#">Client Support</a></li>
-                                          <li class="menu-item"><a href="#">Privacy Policy</a></li>
-                                          <li class="menu-item"><a href="#">Terms of Use</a></li>
-                                          <li class="menu-item"><a href="#">Sitemap</a></li>
+\                                          <li class="menu-item"><a href="#">Sitemap</a></li>
                                       </ul>
                                   </div>
                               </div>

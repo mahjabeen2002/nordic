@@ -122,7 +122,7 @@
         });
     });
 </script>
-// <script type="text/javascript">
+<script type="text/javascript">
 //     function googleTranslateElementInit() {
 //         new google.translate.TranslateElement(
 //             {pageLanguage: 'en'},

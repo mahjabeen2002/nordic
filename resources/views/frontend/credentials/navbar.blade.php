@@ -17,7 +17,7 @@
                               <div class="right_side common_css">
                                   <div class="rg_content_box">
                                       <div class="btn_lf_side">
-                                          <a href="#" class="top_six_btn" target="_blank" rel="nofollow"> Get In
+                                          <a href="{{route('get-a-quote')}}" class="top_six_btn" target="_blank" rel="nofollow"> Get In
                                               Touch</a>
                                       </div>
                                       <div class="med_rg_side">
@@ -69,162 +69,17 @@
                                   <div class="navigation_menu">
                                       <ul id="myNavbar" class="navbar_nav">
                                           <li
-                                              class="menu-item  menu-item-has-children dropdown active dropdown_full position-static mega_menu nav-item">
-                                              <a href="index.html" class="dropdown-toggle nav-link">
+                                              class="menu-item nav-item">
+                                              <a href="/" class=" nav-link">
                                                   <span>Home</span>
                                               </a>
-                                              <ul class="dropdown-menu width_65_percentage">
-                                                  <li>
-                                                      <div class="row">
-                                                          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                                              <div class="list_item_box style_one">
-                                                                  <ul>
-                                                                      <li>
-                                                                          <small class="d-flex align-items-center">
-                                                                              <i class="icon-home only_icon"></i>
-                                                                              <a class="nav_link" href="index.html">Home
-                                                                                  Page - 01</a>
-                                                                          </small>
-                                                                      </li>
-                                                                      <li>
-                                                                          <small class="d-flex align-items-center">
-                                                                              <i class="icon-home only_icon"></i>
-                                                                              <a class="nav_link"
-                                                                                  href="home-2.html">Home Page - 02</a>
-                                                                          </small>
-                                                                      </li>
-                                                                      <li>
-                                                                          <small class="d-flex align-items-center">
-                                                                              <i class="icon-home only_icon"></i>
-                                                                              <a class="nav_link"
-                                                                                  href="home-3.html">Home Page - 03</a>
-                                                                          </small>
-                                                                      </li>
-                                                                      <li>
-                                                                          <small class="d-flex align-items-center">
-                                                                              <i class="icon-home only_icon"></i>
-                                                                              <a class="nav_link"
-                                                                                  href="home-4.html">Home Page - 04</a>
-                                                                          </small>
-                                                                      </li>
+                                          </li>
 
-                                                                  </ul>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                                              <div class="list_item_box style_one">
-                                                                  <ul>
-                                                                      <li>
-                                                                          <small class="d-flex align-items-center">
-                                                                              <i class="icon-home only_icon"></i>
-                                                                              <a class="nav_link"
-                                                                                  href="home-5.html">Home Page - 05</a>
-                                                                          </small>
-                                                                      </li>
-                                                                      <li>
-                                                                          <small class="d-flex align-items-center">
-                                                                              <i class="icon-home only_icon"></i>
-                                                                              <a class="nav_link"
-                                                                                  href="home-6.html">Home Page - 06</a>
-                                                                          </small>
-                                                                      </li>
-                                                                      <li>
-                                                                          <small class="d-flex align-items-center">
-                                                                              <i class="icon-home only_icon"></i>
-                                                                              <a class="nav_link"
-                                                                                  href="home-7.html">Home Page - 07</a>
-                                                                          </small>
-                                                                      </li>
-                                                                      <li>
-                                                                          <small class="d-flex align-items-center">
-                                                                              <i class="icon-home only_icon"></i>
-                                                                              <a class="nav_link"
-                                                                                  href="home-8.html">Home Page - 08</a>
-                                                                          </small>
-                                                                      </li>
-                                                                  </ul>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                                              <div class="list_item_box style_one">
-                                                                  <ul>
-
-                                                                      <li>
-                                                                          <small class="d-flex align-items-center">
-                                                                              <i class="icon-home only_icon"></i>
-                                                                              <a class="nav_link"
-                                                                                  href="home-9.html">Home Page - 09</a>
-                                                                          </small>
-                                                                      </li>
-                                                                      <li>
-                                                                          <small class="d-flex align-items-center">
-                                                                              <i class="icon-home only_icon"></i>
-                                                                              <a class="nav_link"
-                                                                                  href="home-10.html">Home Page -
-                                                                                  10</a>
-                                                                          </small>
-                                                                      </li>
-                                                                      <li>
-                                                                          <small class="d-flex align-items-center">
-                                                                              <i class="icon-home only_icon"></i>
-                                                                              <a class="nav_link"
-                                                                                  href="home-11.html">Home Page -
-                                                                                  11</a>
-                                                                          </small>
-                                                                      </li>
-                                                                      <li>
-                                                                          <small class="d-flex align-items-center">
-                                                                              <i class="icon-home only_icon"></i>
-                                                                              <a class="nav_link"
-                                                                                  href="home-12.html">Home Page -
-                                                                                  12</a>
-                                                                          </small>
-                                                                      </li>
-                                                                  </ul>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                                              <div class="list_item_box style_one">
-                                                                  <ul>
-                                                                      <li>
-                                                                          <small class="d-flex align-items-center">
-                                                                              <i class="icon-home only_icon"></i>
-                                                                              <a class="nav_link"
-                                                                                  href="home-13.html">Home Page -
-                                                                                  13</a>
-                                                                          </small>
-                                                                      </li>
-                                                                      <li>
-                                                                          <small class="d-flex align-items-center">
-                                                                              <i class="icon-home only_icon"></i>
-                                                                              <a class="nav_link"
-                                                                                  href="home-14.html">Home Page -
-                                                                                  14</a>
-                                                                          </small>
-                                                                      </li>
-                                                                      <li>
-                                                                          <small class="d-flex align-items-center">
-                                                                              <i class="icon-home only_icon"></i>
-                                                                              <a class="nav_link"
-                                                                                  href="home-15.html">Home Page -
-                                                                                  15</a>
-                                                                          </small>
-                                                                      </li>
-                                                                      <li>
-                                                                          <small class="d-flex align-items-center">
-                                                                              <i class="icon-home only_icon"></i>
-                                                                              <a class="nav_link"
-                                                                                  href="home-16.html">Home Page -
-                                                                                  16</a>
-                                                                          </small>
-                                                                      </li>
-
-                                                                  </ul>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </li>
-                                              </ul>
+                                             <li
+                                              class="menu-item nav-item">
+                                              <a href="{{route('about-us')}}" class=" nav-link">
+                                                  <span>About</span>
+                                              </a>
                                           </li>
                                           <li class="menu-item menu-item-has-children dropdown nav-item">
                                               <a href="#" class="dropdown-toggle nav-link">
@@ -232,7 +87,7 @@
                                               </a>
                                               <ul class="dropdown-menu">
                                                   <li class="menu-item  nav-item">
-                                                      <a href="about-us.html" class="dropdown-item nav-link">
+                                                      <a href="{{route('about-us')}}" class="dropdown-item nav-link">
                                                           <span>About Us</span>
                                                       </a>
                                                   </li>
@@ -287,7 +142,7 @@
                                                   </li>
                                               </ul>
                                           </li>
-                                          <li
+                                          <!-- <li
                                               class="menu-item menu-item-has-children dropdown dropdown_full position-static mega_menu nav-item">
                                               <a href="#"
                                                   class="dropdown-toggle nav-link"><span>Elements</span></a>
@@ -403,7 +258,7 @@
                                                       </div>
                                                   </li>
                                               </ul>
-                                          </li>
+                                          </li> -->
                                           <li class="menu-item menu-item-has-children dropdown nav-item">
                                               <a href="blog.html" class="dropdown-toggle nav-link">
                                                   <span>Blog</span>
@@ -484,7 +339,7 @@
                                                   </li>
                                               </ul>
                                           </li>
-                                          <li class="menu-item  menu-item-has-children dropdown nav-item">
+                                          <!-- <li style="border:2px solid red;" class="menu-item  menu-item-has-children dropdown nav-item">
                                               <a href="shop.html" class="dropdown-toggle nav-link">
                                                   <span>Shop</span>
                                               </a>
@@ -519,8 +374,18 @@
                                                           <span>Cart</span>
                                                       </a>
                                                   </li>
-                                              </ul>
+
+                                                  
                                           </li>
+                                                
+                                              </ul>
+                                          </li> -->
+
+                                           <li
+                                              class="menu-item nav-item">
+                                              <a href="{{route('contact-us')}}" class=" nav-link">
+                                                  <span>Contact</span>
+                                              </a>
                                       </ul>
                                   </div>
                               </div>
@@ -542,6 +407,8 @@
                                           <button type="button" class="contact-toggler"><i
                                                   class="icon-menu1"></i></button>
                                       </li>
+
+                                 
                                   </ul>
                               </div>
                           </div>
