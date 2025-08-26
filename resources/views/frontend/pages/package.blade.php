@@ -122,13 +122,13 @@
 
 
                 {{-- <div class="pagination-area">
-                    <a href="services.html" class="prev page-numbers">
+                    <a href="" class="prev page-numbers">
                         <i class='bx bx-chevron-left'></i>
                     </a>
                     <span class="page-numbers current" aria-current="page">01</span>
-                    <a href="services.html" class="page-numbers">02</a>
-                    <a href="services.html" class="page-numbers">03</a>
-                    <a href="services.html" class="prev page-numbers">
+                    <a href="" class="page-numbers">02</a>
+                    <a href="" class="page-numbers">03</a>
+                    <a href="" class="prev page-numbers">
                         <i class='bx bx-chevron-right'></i>
                     </a>
                 </div> --}}

@@ -52,7 +52,7 @@
                   <div class="row align-items-center">
                       <div class="col-lg-2 col-md-9 col-sm-9 col-xs-9 logo_column">
                           <div class="header_logo_box">
-                              <a href="index.html" class="logo navbar-brand" target="_blank" rel="nofollow">
+                              <a href="/" class="logo navbar-brand" target="_blank" rel="nofollow">
                                   <img src="{{ asset('assets') }}/images/logo-default.png" alt="Creote Elementor" class="logo_default">
                                   <img src="{{ asset('assets') }}/images/logo-default.png" alt="Creote Elementor" class="logo__sticky">
                               </a>
