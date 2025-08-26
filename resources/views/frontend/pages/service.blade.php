@@ -45,7 +45,7 @@
     </head>
 @endsection
 @section('content')
-    <!-- Start Page Header -->
+
     <div class="page_header_default style_one">
         <div class="parallax_cover">
             <img src="{{ asset('assets') }}/images/page-header-default.jpg" alt="Services Background"
@@ -109,7 +109,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content_box">
+                            <div class="content_box"  style="height: 170px">
                                 <div class="category_tag">{{ $service->serviceCategory->name ?? 'General' }}</div>
                                 <h3 class="title_service">
                                     <a href="{{ route('servicedetail', ['slug' => $service->slug]) }}">
@@ -122,7 +122,7 @@
                                     <a href="{{ route('servicedetail', ['slug' => $service->slug]) }}" class="read_more">
                                         Read More <i class="icon-right-arrow"></i>
                                     </a>
-                                    <div class="starting_at">Starting at ${{ rand(99, 499) }}</div>
+
                                 </div>
                             </div>
                         </div>
@@ -443,4 +443,4 @@
     }
 </style>
 
-@endsection 
+@endsection

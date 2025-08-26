@@ -69,7 +69,69 @@
         });
     @endif
 </script>
+<script>
+    $(document).ready(function() {
+    // Search suggestions functionality
+    let searchTimeout;
+    $('#navbar-search-input').on('input', function() {
+        clearTimeout(searchTimeout);
+        const query = $(this).val().trim();
 
+        if (query.length < 2) {
+            $('#search-suggestions').empty();
+            return;
+        }
+
+        searchTimeout = setTimeout(function() {
+            $.ajax({
+                url: '{{ route("api.search.services") }}',
+                method: 'GET',
+                data: { q: query },
+                success: function(response) {
+                    let suggestionsHtml = '';
+
+                    if (response.length > 0) {
+                        suggestionsHtml = '<div class="suggestions-list">';
+                        response.forEach(function(service) {
+                            suggestionsHtml += `
+                                <div class="suggestion-item" data-service-id="${service.id}">
+                                    <a href="/service/${service.slug}">
+                                        <img src="/uploads/Service/${service.image}" alt="${service.name}" width="40">
+                                        <span>${service.name}</span>
+                                    </a>
+                                </div>
+                            `;
+                        });
+                        suggestionsHtml += '</div>';
+                    } else {
+                        suggestionsHtml = '<div class="no-suggestions">No services found</div>';
+                    }
+
+                    $('#search-suggestions').html(suggestionsHtml);
+                },
+                error: function() {
+                    $('#search-suggestions').html('<div class="no-suggestions">Error loading suggestions</div>');
+                }
+            });
+        }, 300);
+    });
+
+    // Close suggestions when clicking outside
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('#search-popup').length) {
+            $('#search-suggestions').empty();
+        }
+    });
+
+    // Handle search form submission
+    $('#navbar-search-form').on('submit', function(e) {
+        const query = $('#navbar-search-input').val().trim();
+        if (query.length === 0) {
+            e.preventDefault();
+        }
+    });
+});
+</script>
 {{-- End Toaster Script --}}
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>

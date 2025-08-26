@@ -1,50 +1,15 @@
 @extends('frontend.layouts.layout')
 @section('title')
-
-<head>
-    <title>Service Categories | Tech Scouts</title>
-    <meta name="description" content="Service Categories Page" />
-    <meta name="keywords" content="Tech Scouts, Service Categories" />
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Service Categories | Tech Scouts" />
-    <meta property="og:description" content="Explore various service categories offered by Tech Scouts." />
-    <meta property="og:url" content="{{ url()->current() }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Tech Scouts" />
-
-    <!-- Twitter Cards -->
-    <meta name="twitter:title" content="Service Categories | Tech Scouts" />
-    <meta name="twitter:description" content="Explore various service categories offered by Tech Scouts." />
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <!-- Schema Markup (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Service Categories | Tech Scouts",
-        "description": "Explore various service categories offered by Tech Scouts.",
-        "url": "{{ url()->current() }}",
-        "mainEntityOfPage": "{{ url()->current() }}",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Tech Scouts",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://techscouts.se/Tech-Scouts-Logo1000x300.png"
-            }
-        }
-    }
-    </script>
-</head>
-
+    <head>
+        <title>Search Results | Tech Scouts</title>
+        <meta name="description" content="Search results for services offered by Tech Scouts" />
+    </head>
 @endsection
 @section('content')
-
-  <div class="page_header_default style_one">
+    <!-- Start Page Header -->
+    <div class="page_header_default style_one">
         <div class="parallax_cover">
-            <img src="{{ asset('assets') }}/images/page-header-default.jpg" alt="Services Background" class="cover-parallax">
+            <img src="{{ asset('assets') }}/images/page-header-default.jpg" alt="Search Results Background" class="cover-parallax">
         </div>
         <div class="page_header_content">
             <div class="auto-container">
@@ -52,7 +17,7 @@
                     <div class="col-md-12">
                         <div class="banner_title_inner">
                             <div class="title_page">
-                               {{ $category->name }} / Service Categories
+                                Search Results
                             </div>
                         </div>
                     </div>
@@ -60,7 +25,7 @@
                         <div class="breadcrumbs creote">
                             <ul class="breadcrumb m-auto">
                                 <li><a href="{{ route('home') }}">Home</a></li>
-                                <li class="active">Services</li>
+                                <li class="active">Search Results</li>
                             </ul>
                         </div>
                     </div>
@@ -68,8 +33,36 @@
             </div>
         </div>
     </div>
+    <!-- End Page Header -->
 
-    <!-- Start Services Section -->
+    <!-- Start Search Results Section -->
+    <section class="services-section">
+        <div class="pd_top_90"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="title_all_box style_one text-center dark_color">
+                        <div class="title_sections">
+                            <h2>Search Results for "{{ $query }}"</h2>
+                            <p>{{ count($services) }} results found</p>
+                        </div>
+                    </div>
+
+                    <!-- Search Form -->
+                    <div class="search_form_container mb-5">
+                        <form role="search" method="get" action="{{ route('search') }}">
+                            <div class="input-group">
+                                <input type="search" class="form-control" placeholder="Search services..." value="{{ $query }}" name="s" />
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            @if(count($services) > 0)
+            <!-- Start Services Section -->
     <section class="services-section">
         <!-- Spacing -->
         <div class="pd_top_90"></div>
@@ -90,7 +83,7 @@
 
             <div class="row">
                 @foreach ($services as $service)
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-5" >
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-5">
                         <div class="service_box style_one" data-service-id="{{ $service->id }}">
                             <div class="service_img">
                                 <div class="service_badge">Popular</div>
@@ -117,6 +110,7 @@
                                     <a href="{{ route('servicedetail', ['slug' => $service->slug]) }}" class="read_more">
                                         Read More <i class="icon-right-arrow"></i>
                                     </a>
+
                                 </div>
                             </div>
                         </div>
@@ -436,5 +430,16 @@
         }
     }
 </style>
+            @else
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>No services found matching your search criteria.</p>
+                    <a href="{{ route('services') }}" class="btn btn-primary">View All Services</a>
+                </div>
+            </div>
+            @endif
+        </div>
 
+        <div class="pd_bottom_90"></div>
+    </section>
 @endsection

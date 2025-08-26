@@ -228,7 +228,8 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/packagedetail/{slug}', "packagedetail")->name('packagedetail');
 
 
-
+Route::get('/search', 'search')->name('search');
+Route::get('/api/search-services', 'searchServices')->name('api.search.services');
     Route::get('/testimonials', "testimonial")->name('testimonials');
     Route::get('/services', "service")->name('services');
     Route::get('/servicedetail/{slug}', "servicedetail")->name('servicedetail');

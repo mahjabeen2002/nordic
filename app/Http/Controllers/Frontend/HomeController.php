@@ -168,6 +168,41 @@ public function servicedetail($slug)
 
     return view('frontend.pages.servicedetail', compact('fetch', 'categories', 'currentCategory', 'related'));
 }
+    public function search(Request $request)
+    {
+        $query = $request->input('s');
+        $services = [];
+
+        if ($query) {
+            $services = Service::where('name', 'like', '%' . $query . '%')
+                ->orWhere('short_description', 'like', '%' . $query . '%')
+                ->orWhere('long_description', 'like', '%' . $query . '%')
+                ->where('status', 'active')
+                ->with('serviceCategory')
+                ->orderBy('created_at', 'desc')
+                ->get();
+        }
+
+        return view('frontend.pages.search-results', compact('services', 'query'));
+    }
+
+    public function searchServices(Request $request)
+    {
+        $query = $request->input('q');
+
+        if (!$query) {
+            return response()->json([]);
+        }
+
+        $services = Service::where('name', 'like', '%' . $query . '%')
+            ->orWhere('short_description', 'like', '%' . $query . '%')
+            ->where('status', 'active')
+            ->select('id', 'name', 'slug', 'image')
+            ->limit(5)
+            ->get();
+
+        return response()->json($services);
+    }
     public function contact()
     {
         return view('frontend.pages.contact');

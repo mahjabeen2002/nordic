@@ -919,4 +919,112 @@
             <!-- Spacing -->
         </section>
     </div>
+
+    <style>
+        /* Your custom modal styles (optional) */
+        .modal-backdrop {
+            background-color: rgba(0,0,0,0.6);
+        }
+
+        .modal-content {
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .cookie-btn {
+            padding: 8px 16px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .accept-btn {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .reject-btn {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+
+  <!-- rest of your page -->
+
+  <!-- Bootstrap Modal (place inside body, near end) -->
+  <div class="modal fade" id="refreshModal" tabindex="-1" aria-labelledby="refreshModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="refreshModalLabel">Welcome to Our Site!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>We use cookies to enhance your experience.</p>
+          <p>By continuing to use our site, you agree to our use of cookies.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="rejectCookies">Reject Cookies</button>
+          <button type="button" class="btn btn-primary" id="acceptCookies">Accept Cookies</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      // Debug info (remove if not needed)
+      console.log('bootstrap:', typeof bootstrap);
+      console.log('modal element:', document.getElementById('refreshModal'));
+      console.log('cookieConsent:', localStorage.getItem('cookieConsent'));
+
+      const modalEl = document.getElementById('refreshModal');
+      if (!modalEl) return console.error('Modal element not found in DOM — put it inside <body>.');
+
+      // create bootstrap modal instance
+      const bsModal = new bootstrap.Modal(modalEl, { backdrop: true, keyboard: true });
+
+      // show modal only if no consent stored
+      if (!localStorage.getItem("cookieConsent")) {
+          bsModal.show();
+      }
+
+      document.getElementById('acceptCookies').addEventListener('click', function() {
+          storeConsent('accepted');
+          bsModal.hide();
+      });
+
+      document.getElementById('rejectCookies').addEventListener('click', function() {
+          storeConsent('rejected');
+          bsModal.hide();
+      });
+
+      modalEl.addEventListener('hidden.bs.modal', function () {
+          if (!localStorage.getItem("cookieConsent")) storeConsent('basic');
+      });
+
+      function storeConsent(consentStatus) {
+          localStorage.setItem("cookieConsent", consentStatus);
+          // send to backend (optional)
+          fetch('/cookie', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+                  'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
+              },
+              body: JSON.stringify({ consent_status: consentStatus })
+          }).then(r => r.ok ? r.json().then(j => console.log(j)) : console.error('save failed'));
+      }
+  });
+  </script>
 @endsection

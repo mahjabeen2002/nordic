@@ -375,9 +375,9 @@
                                                       </a>
                                                   </li>
 
-                                                  
+
                                           </li>
-                                                
+
                                               </ul>
                                           </li> -->
 
@@ -408,7 +408,7 @@
                                                   class="icon-menu1"></i></button>
                                       </li>
 
-                                 
+
                                   </ul>
                               </div>
                           </div>
@@ -432,21 +432,22 @@
   </div>
   <!---==============mobile menu end =================-->
   <!---==============search popup =================-->
-  <div id="search-popup" class="search-popup">
-      <div class="close-search"><i class="fa fa-times"></i></div>
-      <div class="popup-inner">
-          <div class="overlay-layer"></div>
-          <div class="search-form">
-              <fieldset>
-                  <form role="search" method="get" action="#">
-                      <input type="search" class="search" placeholder="Search..." value="" name="s"
-                          title="Search" />
-                      <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
-                  </form>
-              </fieldset>
-          </div>
-      </div>
-  </div>
+ <div id="search-popup" class="search-popup">
+    <div class="close-search"><i class="fa fa-times"></i></div>
+    <div class="popup-inner">
+        <div class="overlay-layer"></div>
+        <div class="search-form">
+            <fieldset>
+                <form role="search" method="get" action="{{ route('search') }}" id="navbar-search-form">
+                    <input type="search" class="search" id="navbar-search-input" placeholder="Search services..." value="" name="s"
+                        title="Search" autocomplete="off" />
+                    <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
+                </form>
+            </fieldset>
+            <div id="search-suggestions" class="search-suggestions"></div>
+        </div>
+    </div>
+</div>
   <!---==============search popup end =================-->
   <!---==============modal popup =================-->
   <div class="modal_popup one">
@@ -506,3 +507,64 @@
           </div>
       </div>
   </div>
+
+<style>/* Breadcrumb link ko forcefully black karo */
+/* 1) Breadcrumb link text */
+.page_header_default .breadcrumbs .breadcrumb li a,
+.page_header_default .breadcrumbs .breadcrumb li a:visited,
+.page_header_default .breadcrumbs .breadcrumb li a:active {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+/* 2) Common pseudo-element separators (Bootstrap & custom themes) */
+.page_header_default .breadcrumbs .breadcrumb li + li::before,
+.page_header_default .breadcrumbs .breadcrumb .breadcrumb-item + .breadcrumb-item::before,
+.page_header_default .breadcrumbs .breadcrumb li::before {
+  /* Force using a text arrow so we can control color */
+  content: "›" !important;
+  color: #000 !important;
+  opacity: 1 !important;
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 14px;
+  vertical-align: middle;
+  background-image: none !important; /* remove any bg icon */
+  filter: none !important;
+}
+
+/* 3) If theme uses an <i> icon or icon class */
+.page_header_default .breadcrumbs .breadcrumb li i,
+.page_header_default .breadcrumbs .breadcrumb li .icon,
+.page_header_default .breadcrumbs .breadcrumb li .fa,
+.page_header_default .breadcrumbs .breadcrumb li .bi {
+  color: #000 !important;
+  fill: #000 !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+/* 4) If arrow is inline SVG (common case) */
+.page_header_default .breadcrumbs .breadcrumb li svg,
+.page_header_default .breadcrumbs .breadcrumb li svg path,
+.page_header_default .breadcrumbs .breadcrumb li svg g {
+  fill: #000 !important;
+  stroke: #000 !important;
+  color: #000 !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+/* 5) If arrow is a background-image (SVG URL), hide it and use our text arrow */
+.page_header_default .breadcrumbs .breadcrumb li + li,
+.page_header_default .breadcrumbs .breadcrumb li + li::before {
+  background-image: none !important;
+}
+
+/* 6) Fallback: rewrite CSS variable if theme uses one */
+.page_header_default .breadcrumbs,
+.page_header_default .breadcrumbs .breadcrumb {
+  --breadcrumb-color: #000 !important;
+}
+
+</style>
