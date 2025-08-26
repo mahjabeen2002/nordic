@@ -305,7 +305,7 @@
             padding-left: 15px;
         }
 
-        .terms-content ul li:before {
+        /* .terms-content ul li:before {
             content: "";
             position: absolute;
             left: 0;
@@ -314,7 +314,7 @@
             height: 6px;
             background-color: #009c9d;
             border-radius: 50%;
-        }
+        } */
 
         @media (max-width: 767px) {
             .title_page {

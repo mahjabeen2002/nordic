@@ -32,7 +32,7 @@ Transformation</p>
                           </div>
                       </div>
                   </div>
-                  <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
                       <div class="footer_widgets wid_tit style_one">
                           <div class="fo_wid_title">
                               <h2>Company</h2>
@@ -46,16 +46,16 @@ Transformation</p>
                                           <li><a href="/">Home</a></li>
                                           <li><a href="{{route('about-us')}}">About Us</a></li>
                                           <li><a href="{{route('contact-us')}}">Contact</a></li>
-                                          <li><a href="#">Professionals</a></li>
-                                          <li><a href="#">Insights</a></li>
-                                          <li><a href="#">HR Solutions</a></li>
+                                          <li><a href="{{route('about-us')}}">Professionals</a></li>
+                                          <li><a href="{{route('ourjobs')}}">Jobs</a></li>
+                                      
                                       </ul>
                                   </div>
                               </div>
                           </div>
                       </div>
                   </div>
-                  <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
                       <div class="footer_widgets wid_tit style_one">
                           <div class="fo_wid_title">
                               <h2>Information</h2>
@@ -68,11 +68,13 @@ Transformation</p>
                                       <div class="menu-information-container">
                                           <ul class="menu">
                                               <li class="menu-item"><a href="{{route('about-us')}}">How it’s Work</a></li>
-                                              <li class="menu-item"><a href="#">Partners</a></li>
-                                              <li class="menu-item"><a href="/">Testimonials</a></li>
-                                              <li class="menu-item"><a href="#">Key Areas</a></li>
-                                              <li class="menu-item"><a href="#">Case Studies</a></li>
-                                              <li class="menu-item"><a href="#">Pricing</a></li>
+                                              <li class="menu-item"><a href="{{route('services')}}">Services</a></li>
+                                                      <li class="menu-item"><a href="{{route('package')}}">Packages</a></li>
+                                              <li class="menu-item"><a href="{{route('testimonials')}}">Testimonials</a></li>
+                                              <li class="menu-item"><a href="{{route('mediacenter')}}">Media Center</a></li>
+                                 
+                                              <!-- <li class="menu-item"><a href="#">Case Studies</a></li> -->
+                                              <!-- <li class="menu-item"><a href="#">Pricing</a></li> -->
                                           </ul>
                                       </div>
                                   </div>
@@ -80,7 +82,7 @@ Transformation</p>
                           </div>
                       </div>
                   </div>
-                  <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
                       <div class="footer_widgets wid_tit style_one">
                           <div class="fo_wid_title">
                               <h2>Essentials</h2>
@@ -91,52 +93,22 @@ Transformation</p>
                               <div class="navigation_foo_inner">
                                   <div class="menu-essentials-container">
                                       <ul class="menu">
-                                          <li class="menu-item"><a href="#">Careers</a></li>
-                                          <li class="menu-item"><a href="#">Infrastructure</a></li>
-                                          <li class="menu-item"><a href="#">Client Support</a></li>
-\                                          <li class="menu-item"><a href="#">Sitemap</a></li>
+                                          <li class="menu-item"><a href="{{route('ourjobs')}}">Careers</a></li>
+                                          <!-- <li class="menu-item"><a href="#">Infrastructure</a></li> -->
+                                   
+                                                        <li class="menu-item"><a href="{{route('team')}}">Team</a></li>
+                                                <li class="menu-item"><a href="{{route('get-a-quote')}}">Quote</a></li>
+                                          <li class="menu-item"><a href="{{route('privacy-policy')}}">Privacy Policy</a></li>
+                                          <li class="menu-item"><a href="{{route('terms-and-conditions')}}">Terms And Conditions</a></li>
+
+                                         <!-- <li class="menu-item"><a href="#">Sitemap</a></li> -->
                                       </ul>
                                   </div>
                               </div>
                           </div>
                       </div>
                   </div>
-                  <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
-                      <div class="footer_widgets wid_tit style_one">
-                          <div class="fo_wid_title">
-                              <h2>Recent Posts</h2>
-                          </div>
-                      </div>
-                      <div class="footer_widgets recent_news_em_wp style_two clearfix">
-                          <div class="news_boxed light_color">
-
-                              <div class="news_recent clearfix  image_s  ">
-                                  <div class="image ">
-                                      <img width="750" height="420" src="{{ asset('assets') }}/images/blog/blog-image-9.jpg"
-                                          class="img-fluid" alt="img" loading="lazy">
-                                  </div>
-                                  <div class="content ">
-                                      <a class="date"><span class="fa fa-clock-o"></span>October 8, 2023</a>
-                                      <h2 class="title"><a href="blog-single.html" rel="bookmark">Why Should Business
-                                              Payroll
-                                              Outsourcing?</a></h2>
-                                  </div>
-                              </div>
-                              <div class="news_recent clearfix  image_s  ">
-                                  <div class="image ">
-                                      <img width="750" height="420" src="{{ asset('assets') }}/images/blog/blog-image-8.jpg"
-                                          class="img-fluid" alt="img" loading="lazy">
-                                  </div>
-                                  <div class="content ">
-                                      <a class="date"><span class="fa fa-clock-o"></span>October 8, 2023</a>
-                                      <h2 class="title"><a href="blog-single.html" rel="bookmark">Most Employees
-                                              Support
-                                              Measures</a></h2>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+              
               </div>
           </div>
           <!--===============spacing==============-->

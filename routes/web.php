@@ -242,11 +242,11 @@ Route::get('/api/search-services', 'searchServices')->name('api.search.services'
     Route::post('/upload-resume/{slug}', 'uploadResume')->name('upload.resume');
     Route::get('/getSubCategoryCards/{categoryId}',"getSubCategoryCards")->name('subCategoryCards');
 
-    Route::get('/team',"team");
+    Route::get('/team',"team")->name('team');
     Route::get('/teamdetail/{slug}',"teamdetail");
 
-    Route::get('/terms-and-conditions',"termsandconditions");
-    Route::get('/privacy-policy',"privacypolicy");
+    Route::get('/terms-and-conditions',"termsandconditions")->name('terms-and-conditions');
+    Route::get('/privacy-policy',"privacypolicy")->name('privacy-policy');
 });
 
 

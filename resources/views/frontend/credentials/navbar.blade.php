@@ -81,305 +81,27 @@
                                                   <span>About</span>
                                               </a>
                                           </li>
-                                          <li class="menu-item menu-item-has-children dropdown nav-item">
-                                              <a href="#" class="dropdown-toggle nav-link">
-                                                  <span>Pages</span>
+  <li
+                                              class="menu-item nav-item">
+                                              <a href="{{route('services')}}" class=" nav-link">
+                                                  <span>Services</span>
                                               </a>
-                                              <ul class="dropdown-menu">
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="{{route('about-us')}}" class="dropdown-item nav-link">
-                                                          <span>About Us</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item menu-item-has-children dropdown nav-item">
-                                                      <a href="service-default.html"
-                                                          class="dropdown-item nav-link"><span>Service</span></a>
-                                                      <ul class="dropdown-menu">
-                                                          <li class="menu-item  nav-item">
-                                                              <a href="service-classic.html"
-                                                                  class="dropdown-item nav-link">
-                                                                  <span>Service Classic</span>
-                                                              </a>
-                                                          </li>
-                                                          <li class="menu-item  nav-item">
-                                                              <a href="service-default.html"
-                                                                  class="dropdown-item nav-link">
-                                                                  <span>Service Default</span>
-                                                              </a>
-                                                          </li>
-                                                          <li class="menu-item nav-item">
-                                                              <a href="service-details.html"
-                                                                  class="dropdown-item nav-link">
-                                                                  <span>Service Details</span>
-                                                              </a>
-                                                          </li>
-                                                      </ul>
-                                                  </li>
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="pricing-packages.html" class="dropdown-item nav-link">
-                                                          <span>Pricing Packages</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="our-team.html" class="dropdown-item nav-link">
-                                                          <span>Our Team</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="faqs.html" class="dropdown-item nav-link">
-                                                          <span>Faq’s</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="contact.html" class="dropdown-item nav-link">
-                                                          <span>Contact</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="coming-soon.html" class="dropdown-item nav-link">
-                                                          <span>Coming Soon</span>
-                                                      </a>
-                                                  </li>
-                                              </ul>
                                           </li>
-                                          <!-- <li
-                                              class="menu-item menu-item-has-children dropdown dropdown_full position-static mega_menu nav-item">
-                                              <a href="#"
-                                                  class="dropdown-toggle nav-link"><span>Elements</span></a>
-                                              <ul class="dropdown-menu width_60_percentage">
-                                                  <li>
-                                                      <div class="row">
-                                                          <div class="col-lg-2 m_column">
-                                                              <h5>Content 01</h5>
-                                                              <div class="list_item_box style_one">
-                                                                  <ul>
-                                                                      <li><a
-                                                                              href="elements/testimonial.html">Testimonial</a>
-                                                                      </li>
-                                                                      <li><a href="elements/call-to-action.html">Contact
-                                                                              List</a></li>
-                                                                      <li><a href="elements/video-button.html">Video
-                                                                              Button</a></li>
-                                                                      <li><a
-                                                                              href="elements/newsteller.html">Newsteller</a>
-                                                                      </li>
-                                                                      <li><a href="elements/blog-posts.html">Blog
-                                                                              Posts</a></li>
-                                                                      <li><a href="elements/team.html">Team</a></li>
-                                                                  </ul>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-lg-2 m_column">
-                                                              <h5>Content 02</h5>
-                                                              <div class="list_item_box style_one">
-                                                                  <ul>
-                                                                      <li><a href="elements/process.html">Process</a>
-                                                                      </li>
-                                                                      <li><a href="elements/project-carousel.html">Project
-                                                                              Carousel</a></li>
-                                                                      <li><a href="elements/project-filter.html">Project
-                                                                              Filter</a></li>
-                                                                      <li><a href="elements/progress-bar.html">Progress
-                                                                              Bar</a></li>
-                                                                      <li><a href="elements/content-box.html">Content
-                                                                              Box</a></li>
-                                                                      <li><a
-                                                                              href="elements/faqs-elements.html">Faq’s</a>
-                                                                      </li>
-                                                                  </ul>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-lg-2 m_column">
-                                                              <h5>Presentational</h5>
-                                                              <div class="list_item_box style_one">
-                                                                  <ul>
-                                                                      <li><a href="elements/button.html">Button</a>
-                                                                      </li>
-                                                                      <li><a href="elements/list-items.html">List
-                                                                              Items</a></li>
-                                                                      <li><a href="elements/contact-form.html">Contact
-                                                                              Form</a></li>
-                                                                      <li><a href="elements/service-post.html">Service
-                                                                              Post</a></li>
-                                                                      <li><a href="elements/sliders.html">Sliders</a>
-                                                                      </li>
-                                                                      <li><a href="elements/tabs.html">Tabs</a></li>
-                                                                  </ul>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-lg-2 m_column">
-                                                              <h5>Typography</h5>
-                                                              <div class="list_item_box style_one">
-                                                                  <ul>
-                                                                      <li><a href="elements/call-to-action.html">Call
-                                                                              to Action</a></li>
-                                                                      <li><a href="elements/extra-content.html">Extra
-                                                                              Content</a></li>
-                                                                      <li><a href="elements/simple-image.html">Simple
-                                                                              Image</a></li>
-                                                                      <li><a href="elements/client-image.html">Client
-                                                                              Image</a></li>
-                                                                      <li><a href="elements/price-plan.html">Price
-                                                                              Plan</a></li>
-                                                                      <li><a href="elements/title.html">Title</a></li>
-                                                                  </ul>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-lg-2 m_column">
-                                                              <h5>Basic</h5>
-                                                              <div class="list_item_box style_one">
-                                                                  <ul>
-                                                                      <li><a href="elements/service-box.html">Service
-                                                                              Box</a></li>
-                                                                      <li><a href="elements/count-down.html">Count
-                                                                              Down</a></li>
-                                                                      <li><a href="elements/timeline.html">Time
-                                                                              Line</a></li>
-                                                                      <li><a href="elements/contact-box.html">Contact
-                                                                              Box</a></li>
-                                                                  </ul>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-lg-2 m_column">
-                                                              <h5>Infographic</h5>
-                                                              <div class="list_item_box style_one">
-                                                                  <ul>
-                                                                      <li><a href="elements/image-box.html">Image
-                                                                              Box</a></li>
-                                                                      <li><a href="elements/icon-box.html">Icon Box</a>
-                                                                      </li>
-                                                                      <li><a href="elements/fun-facts.html">Fun
-                                                                              Facts</a></li>
-                                                                      <li><a href="elements/quotes.html">Quotes</a>
-                                                                      </li>
-                                                                  </ul>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </li>
-                                              </ul>
-                                          </li> -->
-                                          <li class="menu-item menu-item-has-children dropdown nav-item">
-                                              <a href="blog.html" class="dropdown-toggle nav-link">
-                                                  <span>Blog</span>
+                                            <li
+                                              class="menu-item nav-item">
+                                              <a href="{{route('mediacenter')}}" class=" nav-link">
+                                                  <span>Media Center</span>
                                               </a>
-                                              <ul class="dropdown-menu">
-                                                  <li class="menu-item nav-item">
-                                                      <a href="blog.html" class="dropdown-item nav-link">
-                                                          <span>Blog Classic</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="blog-modern.html" class="dropdown-item nav-link">
-                                                          <span>Blog Modern</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="blog-simple.html" class="dropdown-item nav-link">
-                                                          <span>Blog Simple</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="blog-list-view.html" class="dropdown-item nav-link">
-                                                          <span>Blog List View</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="blog-metro-fullwidth.html"
-                                                          class="dropdown-item nav-link">
-                                                          <span>Metro Fullwidth</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item nav-item">
-                                                      <a href="blog-single.html" class="dropdown-item nav-link">
-                                                          <span>Single Post</span>
-                                                      </a>
-                                                  </li>
-                                              </ul>
-                                          </li>
-                                          <li class="menu-item menu-item-has-children dropdown nav-item">
-                                              <a href="project-1-column-grid.html" class="dropdown-toggle nav-link">
-                                                  <span>Projects</span>
-                                              </a>
-                                              <ul class="dropdown-menu">
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="project-1-column-grid.html"
-                                                          class="dropdown-item nav-link">
-                                                          <span>1 Column Grid</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="project-1-column-with-sidebar.html"
-                                                          class="dropdown-item nav-link">
-                                                          <span>1 Column With Sidebar</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="project-2-column-grid.html"
-                                                          class="dropdown-item nav-link">
-                                                          <span>2 Columns Grid</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="project-3-column-grid.html"
-                                                          class="dropdown-item nav-link">
-                                                          <span>3 Columns Grid</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="project-3-column-overlay.html"
-                                                          class="dropdown-item nav-link">
-                                                          <span>3 Columns Overlay</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item nav-item">
-                                                      <a href="project-details.html" class="dropdown-item nav-link">
-                                                          <span>Project Details</span>
-                                                      </a>
-                                                  </li>
-                                              </ul>
-                                          </li>
-                                          <!-- <li style="border:2px solid red;" class="menu-item  menu-item-has-children dropdown nav-item">
-                                              <a href="shop.html" class="dropdown-toggle nav-link">
-                                                  <span>Shop</span>
-                                              </a>
-                                              <ul class="dropdown-menu">
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="shop.html" class="dropdown-item nav-link">
-                                                          <span>Products</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item nav-item">
-                                                      <a href="shop-details.html" class="dropdown-item nav-link">
-                                                          <span>Product Details</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item nav-item">
-                                                      <a href="shop-with-sidebar.html" class="dropdown-item nav-link">
-                                                          <span>Product With Sidebar</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="my-account.html" class="dropdown-item nav-link">
-                                                          <span>My account</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="checkout.html" class="dropdown-item nav-link">
-                                                          <span>Checkout</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="menu-item  nav-item">
-                                                      <a href="cart.html" class="dropdown-item nav-link">
-                                                          <span>Cart</span>
-                                                      </a>
-                                                  </li>
-
-
                                           </li>
 
-                                              </ul>
-                                          </li> -->
+                                            <li
+                                              class="menu-item nav-item">
+                                              <a href="{{route('ourjobs')}}" class=" nav-link">
+                                                  <span>Career</span>
+                                              </a>
+                                          </li>
+                                         
+                                     
 
                                            <li
                                               class="menu-item nav-item">
@@ -430,141 +152,165 @@
           </div>
       </nav>
   </div>
-  <!---==============mobile menu end =================-->
-  <!---==============search popup =================-->
- <div id="search-popup" class="search-popup">
+<!---==============mobile menu =================-->
+<div class="crt_mobile_menu">
+    <div class="menu-backdrop"></div>
+    <nav class="menu-box">
+        <div class="close-btn"><i class="icon-close"></i></div>
+
+        <div class="menu-outer">
+            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+        </div>
+    </nav>
+</div>
+<!---==============mobile menu end =================-->
+<!---==============search popup =================-->
+<div id="search-popup" class="search-popup">
     <div class="close-search"><i class="fa fa-times"></i></div>
     <div class="popup-inner">
         <div class="overlay-layer"></div>
         <div class="search-form">
             <fieldset>
-                <form role="search" method="get" action="{{ route('search') }}" id="navbar-search-form">
-                    <input type="search" class="search" id="navbar-search-input" placeholder="Search services..." value="" name="s"
-                        title="Search" autocomplete="off" />
+                <form role="search" method="get" action="#">
+                    <input type="search" class="search" placeholder="Search..." value="" name="s"
+                        title="Search" />
                     <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
                 </form>
             </fieldset>
-            <div id="search-suggestions" class="search-suggestions"></div>
         </div>
     </div>
 </div>
-  <!---==============search popup end =================-->
-  <!---==============modal popup =================-->
-  <div class="modal_popup one">
-      <div class="modal-popup-inner">
-          <div class="close-modal"><i class="fa fa-times"></i></div>
-          <div class="modal_box">
-              <div class="row">
-                  <div class="col-lg-12 col-md-12 about_company_inner">
-                      <div class="abt_content">
-                          <div class="logo">
-                              <img src="{{ asset('/logo final.png') }}" style="width:220px; height:60px;"
-                                  alt="Grow Digital Care Logo" class="company_logo_modal">
-                          </div>
-                          <div class="text">
-                              <p>Grow Digital Care is a global leader in digital solutions, offering a diverse range of
-                                  services to empower businesses in today's dynamic digital era. We specialize in
-                                  software
-                                  development, website development, mobile applications, and digital marketing services
-                                  to
-                                  help businesses thrive online.</p>
-                              <a href=" ">Read More About Us</a>
-                          </div>
-                          <div class="copright">
-                              ©
-                              <script>
-                                  document.write(new Date().getFullYear())
-                              </script> Grow Digital Care. All Rights Reserved.
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-5 col-md-12 contact_form_side">
-                      <div class="contact_form_box">
-                          <h3>Get In Touch</h3>
-                          <div class="contact_info">
-                              <div class="con_info">
-                                  <i class="icon-placeholder"></i>
-                                  <p>Valviksgatan 3, 16456 Kista, Stockholm Sweden</p>
-                              </div>
-                              <div class="con_info">
-                                  <i class="icon-email"></i>
-                                  <a href="mailto:info@growdigitalcare.com">info@growdigitalcare.com</a>
-                              </div>
-                              <div class="con_info">
-                                  <i class="icon-phone-call"></i>
-                                  <a href="tel:+46732074111">+46-732074111</a>
-                              </div>
-                          </div>
-                          <ul class="social_media">
-                              <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                              <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                              <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                              <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+<!---==============search popup end =================-->
+<!---==============modal popup =================-->
+<div class="modal_popup one">
+    <div class="modal-popup-inner">
+        <div class="close-modal"><i class="fa fa-times"></i></div>
+        <div class="modal_box">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 about_company_inner">
+                    <div class="abt_content">
+                        <div class="logo">
+                            <img src="{{ asset('/logo final.png') }}" style="width:220px; height:60px;" alt="nordic Logo" class="company_logo_modal">
+                        </div>
+                        <div class="text">
+                            <p> Nordic IT HUB AB is a leading Managed IT Service Provider 
+headquartered in the Nordics. We specialize in delivering 
+enterprise-grade IT solutions and services that help organizations 
+achieve operational excellence. Our expertise spans IT service 
+management, cloud infrastructure, service desk support, license 
+and HW procurement, compliance, and on demand IT 
+consultancyp>
+                            <a href="{{ route('about-us') }}">Read More About Us</a>
+                        </div>
+                        <div class="copright">
+                            © <script>document.write(new Date().getFullYear())</script> Nordic. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+                {{-- <div class="col-lg-5 col-md-12 contact_form_side">
+                    <div class="contact_form_box">
+                        <h3>Get In Touch</h3>
+                        <div class="contact_info">
+                            <div class="con_info">
+                                <i class="icon-placeholder"></i>
+                                <p>Valviksgatan 3, 16456 Kista, Stockholm Sweden</p>
+                            </div>
+                            <div class="con_info">
+                                <i class="icon-email"></i>
+                                <a href="mailto:info@growdigitalcare.com">info@growdigitalcare.com</a>
+                            </div>
+                            <div class="con_info">
+                                <i class="icon-phone-call"></i>
+                                <a href="tel:+46732074111">+46-732074111</a>
+                            </div>
+                        </div>
+                        <ul class="social_media">
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div> --}}
+            </div>
+        </div>
+    </div>
+</div>
 
-<style>/* Breadcrumb link ko forcefully black karo */
-/* 1) Breadcrumb link text */
-.page_header_default .breadcrumbs .breadcrumb li a,
-.page_header_default .breadcrumbs .breadcrumb li a:visited,
-.page_header_default .breadcrumbs .breadcrumb li a:active {
-  color: #000 !important;
-  text-decoration: none !important;
-}
+  <style>
+        /* About Section Styling */
 
-/* 2) Common pseudo-element separators (Bootstrap & custom themes) */
-.page_header_default .breadcrumbs .breadcrumb li + li::before,
-.page_header_default .breadcrumbs .breadcrumb .breadcrumb-item + .breadcrumb-item::before,
-.page_header_default .breadcrumbs .breadcrumb li::before {
-  /* Force using a text arrow so we can control color */
-  content: "›" !important;
-  color: #000 !important;
-  opacity: 1 !important;
-  display: inline-block;
-  margin: 0 8px;
-  font-size: 14px;
-  vertical-align: middle;
-  background-image: none !important; /* remove any bg icon */
-  filter: none !important;
-}
 
-/* 3) If theme uses an <i> icon or icon class */
-.page_header_default .breadcrumbs .breadcrumb li i,
-.page_header_default .breadcrumbs .breadcrumb li .icon,
-.page_header_default .breadcrumbs .breadcrumb li .fa,
-.page_header_default .breadcrumbs .breadcrumb li .bi {
-  color: #000 !important;
-  fill: #000 !important;
-  opacity: 1 !important;
-  filter: none !important;
-}
+        .title_page {
+            font-size: 48px;
+            font-weight: 700;
+            color: #333;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
 
-/* 4) If arrow is inline SVG (common case) */
-.page_header_default .breadcrumbs .breadcrumb li svg,
-.page_header_default .breadcrumbs .breadcrumb li svg path,
-.page_header_default .breadcrumbs .breadcrumb li svg g {
-  fill: #000 !important;
-  stroke: #000 !important;
-  color: #000 !important;
-  opacity: 1 !important;
-  filter: none !important;
-}
+        .breadcrumbs.creote {
+            margin-top: 15px;
+        }
 
-/* 5) If arrow is a background-image (SVG URL), hide it and use our text arrow */
-.page_header_default .breadcrumbs .breadcrumb li + li,
-.page_header_default .breadcrumbs .breadcrumb li + li::before {
-  background-image: none !important;
-}
+        .breadcrumb.m-auto {
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 8px 15px;
+            border-radius: 4px;
+        }
 
-/* 6) Fallback: rewrite CSS variable if theme uses one */
-.page_header_default .breadcrumbs,
-.page_header_default .breadcrumbs .breadcrumb {
-  --breadcrumb-color: #000 !important;
-}
+        .breadcrumb li {
+            display: inline-block;
+            color: #fff;
+        }
 
-</style>
+        .breadcrumb li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Content Section */
+        .about-section {
+            padding: 40px 0;
+            background: #fff;
+        }
+
+        .content-column {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section-divider {
+            border: 1px solid #eee;
+            margin: 20px 0 30px;
+        }
+
+        .section-heading {
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #555;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .section-heading .title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #222;
+            margin: 0;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+    </style>
