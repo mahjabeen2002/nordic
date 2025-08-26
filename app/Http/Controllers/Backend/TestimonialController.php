@@ -23,19 +23,18 @@ class TestimonialController extends Controller
 
     public function store(Request $req)
     {
-        $cleanfeedback = strip_tags($req->input('feedback'));
         $testimonial = new Testimonial();
         $testimonial->name = $req->name;
         $testimonial->companyname = $req->companyname;
-        $testimonial->feedback = $cleanfeedback;
+        $testimonial->feedback = $req->feedback;
         $image=$req->file('image');
         $ext = rand().".".$image->getClientOriginalName();
         $image->move('uploads/testimonial',$ext);
         $testimonial->image=$ext;
         $testimonial->save();
-       
-      
-    
+
+
+
         return redirect()->route('testimonial-list')->with('message', 'Data Added Successfully');
     }
 
@@ -65,28 +64,27 @@ class TestimonialController extends Controller
             'image' => 'nullable|mimes:jpg,jpeg,png',
             'companyname' => 'required|string',
         ]);
-    
+
         if ($validator->fails()) {
             return redirect()->back()->withErrors($validator)->withInput();
         }
-    
+
         $testimonial = Testimonial::findOrFail($id);
-    
+
         $slug = Str::slug($request->input('name'));
-        $cleanfeedback = strip_tags($request->input('feedback'));
-    
+
         $testimonial->name = $request->input('name');
-        $testimonial->feedback =  $cleanfeedback ;
+        $testimonial->feedback =  $request->input('feedback');
         $testimonial->companyname = $request->input('companyname');
-    
-    
+
+
         if ($request->hasFile('image')) {
             $file = $request->file('image');
             $ext = $file->getClientOriginalExtension();
             $filename = time() . '.' . $ext;
-    
+
             $file->move('uploads/testimonial/', $filename);
-    
+
             // Delete the previous image file if it exists
             if (!empty($testimonial->image)) {
                 $oldImagePath = 'uploads/testimonial/' . $testimonial->image;
@@ -94,10 +92,10 @@ class TestimonialController extends Controller
                     unlink($oldImagePath);
                 }
             }
-    
+
             $testimonial->image = $filename;
         }
-    
+
         $testimonial->save();
 
         return redirect()->route('testimonial-list')->with('message', 'Data Updated Successfully');
@@ -115,5 +113,5 @@ class TestimonialController extends Controller
     return response()->json(['message' => 'Status updated successfully']);
 }
 
-    
+
 }

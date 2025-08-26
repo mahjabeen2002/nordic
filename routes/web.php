@@ -214,10 +214,10 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/get-a-quote', "quote_get")->name('get-a-quote');
     Route::post('/quote_post', "quote_post")->name('quote.post');
     Route::get('about-us', 'about')->name('about-us');
-    
+
     Route::get('contact-us', 'contact')->name('contact-us');
     Route::post('/contactuspost',"contactuspost");
-    
+
      Route::post('/cookie-consent',"store");
 
     Route::get('/mediacenter', "mediacenter")->name('mediacenter');
@@ -228,6 +228,8 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/packagedetail/{slug}', "packagedetail")->name('packagedetail');
 
 
+
+    Route::get('/testimonials', "testimonial")->name('testimonials');
     Route::get('/services', "service")->name('services');
     Route::get('/servicedetail/{slug}', "servicedetail")->name('servicedetail');
     Route::get('/servicecategory/{slug}', "getServicesByCategorySlug")->name('servicecategory');
@@ -235,7 +237,7 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/our-jobs', "ourJobs")->name('ourjobs');
     Route::get('/job-detail/{slug}', "jobdetail")->name('jobdetail');
 
-    
+
     Route::post('/upload-resume/{slug}', 'uploadResume')->name('upload.resume');
     Route::get('/getSubCategoryCards/{categoryId}',"getSubCategoryCards")->name('subCategoryCards');
 

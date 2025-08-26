@@ -30,19 +30,19 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $mediacenter = MediaCenter::all();
-        $service = Service::all();
-        $companies = Company::all();
-        $servicecategory = ServiceCategory::all();
-        $testimonial = Testimonial::all();
-        $servicescategory = ServiceCategory::all();
-        $team = Team::all();
-        return view("frontend.pages.index", compact('companies', 'servicecategory', 'team', 'testimonial', 'service', 'mediacenter', 'servicescategory'));
+        $mediaItems = MediaCenter::orderBy('created_at', 'desc')->get();
+        $services = Service::orderBy('created_at', 'desc')->get();
+        $companies = Company::orderBy('created_at', 'desc')->get();
+        $servicecategory = ServiceCategory::orderBy('created_at', 'desc')->get();
+        $testimonials = Testimonial::orderBy('created_at', 'desc')->get();
+        $servicescategory = ServiceCategory::orderBy('created_at', 'desc')->get();
+        $team = Team::orderBy('created_at', 'desc')->get();
+        return view("frontend.pages.index", compact('companies', 'servicecategory', 'team', 'testimonials', 'services', 'mediaItems', 'servicescategory'));
     }
 
     public function servicecat(Request $req)
     {
-        $data1 = ServiceCategory::all();
+        $data1 = ServiceCategory::orderBy('created_at', 'desc')->get();
         return response()->json(['data1' => $data1]);
     }
 
@@ -110,6 +110,7 @@ class HomeController extends Controller
     // Find the category by slug
     $category = ServiceCategory::where('slug', $slug)->first();
 
+  $category->formatted_date = date('F j, Y', strtotime($category->created_at));
     // If the category is found, retrieve its services
     if ($category) {
         $services = $category->services;
@@ -119,34 +120,54 @@ class HomeController extends Controller
         return abort(404);
     }
 }
-
-
-    public function service()
-    {
-        $fetch = Service::all();
-        return view('frontend.pages.service', compact('fetch'));
-    }
- public function servicedetail($slug)
+public function testimonial()
 {
-    // Fetch the service details by slug
-    $fetch = Service::where('slug', $slug)->first();
-
-    // If service is found, fetch its category
-    if ($fetch) {
-        $category = $fetch->serviceCategory; // Assuming there's a relationship defined in Service model
-
-        // Fetch related services (excluding the current one)
-        $related = Service::where('category_id', $fetch->category_id)
-                          ->where('slug', '!=', $slug)
-                          ->get();
-
-        return view('frontend.pages.servicedetail', compact('fetch', 'category', 'related'));
-    } else {
-        // Handle the case where the service is not found
-        return abort(404);
-    }
+       // Fetch testimonials
+    $testimonials = Testimonial::orderBy('created_at', 'desc')
+                               ->take(6)
+                               ->get();
+    return view('frontend.pages.testimonial', compact('testimonials'));
 }
 
+public function service()
+{
+    $services = Service::orderBy('created_at', 'desc')->get();
+
+    // Format date for each service
+    $services->each(function ($service) {
+        $service->formatted_date = date('F j, Y', strtotime($service->created_at));
+    });
+
+    return view('frontend.pages.service', compact('services'));
+}
+// In your controller
+// In your controller - fetch categories differently
+public function servicedetail($slug)
+{
+    $fetch = Service::where('slug', $slug)->first();
+
+    if (!$fetch) {
+        return abort(404);
+    }
+
+    // Format date for the main service
+    $fetch->formatted_date = date('F j, Y', strtotime($fetch->created_at));
+
+    $categories = ServiceCategory::all();
+    $currentCategory = $fetch->serviceCategory;
+
+    // Get related services
+    $related = Service::where('category_id', $fetch->category_id)
+                      ->where('slug', '!=', $slug)
+                      ->get();
+
+    // Format date for each related service
+    $related->each(function ($item) {
+        $item->formatted_date = date('F j, Y', strtotime($item->created_at));
+    });
+
+    return view('frontend.pages.servicedetail', compact('fetch', 'categories', 'currentCategory', 'related'));
+}
     public function contact()
     {
         return view('frontend.pages.contact');
