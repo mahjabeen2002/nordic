@@ -85,9 +85,13 @@
                 <div class="col-lg-8 offset-lg-2">
                     <div class="title_all_box style_one text-center dark_color">
                         <div class="title_sections">
-                            <div class="before_title">Explore Our Offerings</div>
+                            <div class="before_title">Comprehensive IT Services Built on Best Practices</div>
                             <h2>Our Professional Services</h2>
-                            <p>Comprehensive digital solutions tailored to your business needs. Discover how our expertise can transform your digital presence.</p>
+                            <p> Our services span the entire IT lifecycle, ensuring technology is 
+reliable, secure, and strategically aligned with business 
+objectives. All services are structured around industry best 
+practices, ensuring standardized processes, accountability, 
+and continuous improvement</p>
                         </div>
                     </div>
                 </div>

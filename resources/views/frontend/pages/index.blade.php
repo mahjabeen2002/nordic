@@ -154,7 +154,7 @@
                                 <div class="contnet">
                                     <h3> General Enquires </h3>
                                     <p>
-                                        Phone: +98 060 712 34 &amp; Email: sendmail@qetus.com
+                                        Phone: +46 767 091 141 &amp; Email: info@nordicithub.com
                                     </p>
                                 </div>
                             </div>
@@ -206,7 +206,7 @@
                                 </div>
                                 <div class="experience">
                                     <div class="experience_inner">
-                                        <h2> 25+ Years Of Experience </h2>
+                                        <h2> Enterprise-Grade Solutions </h2>
                                     </div>
                                 </div>
                             </div>
@@ -218,11 +218,9 @@
                     <div class="col-xl-6 col-lg-12 col-md-12">
                         <div class="title_all_box style_one dark_color">
                             <div class="title_sections left">
-                                <div class="before_title">Transform Workplace</div>
-                                <h2 class="title">Experts analysed, cost effective software</h2>
-                                <p>Equip your business with the right tool to achieve peaking levels of people
-                                    performance. Adrenalin HRMS Software is designed to align human capital with company
-                                    goals</p>
+                                <div class="before_title">About Nordic IT HUB AB</div>
+                                <h2 class="title">Leading Managed IT Service Provider</h2>
+                                <p>Nordic IT HUB AB is a leading Managed IT Service Provider headquartered in the Nordics. We specialize in delivering enterprise-grade IT solutions and services that help organizations achieve operational excellence.</p>
                             </div>
                         </div>
 
@@ -235,7 +233,8 @@
                                         </span>
                                         <a class="nav_link" href="#" target="&quot;_blank&quot;"
                                             rel="&quot;nofollow&quot;">
-                                            End to end visibility of time metrics for the hybrid workforce </a>
+                                            Expert in modern workplace technologies & office IT infrastructure
+ </a>
                                     </small>
                                 </li>
                                 <li class="list_items pd_bottom_10">
@@ -245,7 +244,8 @@
                                         </span>
                                         <a class="nav_link" href="#" target="&quot;_blank&quot;"
                                             rel="&quot;nofollow&quot;">
-                                            Workload Balancing between individuals and teams </a>
+                                            Deep knowledge of ITSM, Governance, and Compliance frameworks
+</a>
                                     </small>
                                 </li>
                                 <li class="list_items pd_bottom_10">
@@ -255,7 +255,9 @@
                                         </span>
                                         <a class="nav_link" href="#" target="&quot;_blank&quot;"
                                             rel="&quot;nofollow&quot;">
-                                            Create Automated timesheets concentrated facilities </a>
+                                            
+Expert in managing both cloud and on-premises infrastructures
+ </a>
                                     </small>
                                 </li>
                                 <li class="list_items pd_bottom_10">
@@ -265,7 +267,9 @@
                                         </span>
                                         <a class="nav_link" href="#" target="&quot;_blank&quot;"
                                             rel="&quot;nofollow&quot;">
-                                            Integrate ProHance data within payroll systems </a>
+                                            
+A client-first philosophy focused on reliability and transparency
+ </a>
                                     </small>
                                 </li>
                                 <li class="list_items pd_bottom_10">
@@ -275,7 +279,8 @@
                                         </span>
                                         <a class="nav_link" href="#" target="&quot;_blank&quot;"
                                             rel="&quot;nofollow&quot;">
-                                            Transform processes based on work patterns </a>
+                                            
+Enablers of sustainable growth and long-term digital transformation</a>
                                     </small>
                                 </li>
                             </ul>
@@ -284,8 +289,7 @@
                         <div class="pd_bottom_20"></div>
                         <!--===============spacing==============-->
                         <div class="theme_btn_all color_one">
-                            <a href="#" target="_blank" rel="nofollow" class="theme-btn one">Start 14 Day Trial
-                                Now</a>
+                            <a href="#" target="_blank" rel="nofollow" class="theme-btn one">Discovers Our Solutions </a>
                         </div>
                     </div>
                 </div>
@@ -308,9 +312,8 @@
                     <div class="col-lg-8">
                         <div class="title_all_box style_one">
                             <div class="title_sections">
-                                <h2 class="title">Focus on your Business</h2>
-                                <p>When you work with Tech Scouts, you get the best. We provide adaptable solutions that
-                                    allow you to be a part of the entire process</p>
+                                <h2 class="title">Our IT Services</h2>
+                                <p>Comprehensive IT services built on best practices, ensuring technology is reliable, secure, and strategically aligned with business objectives.</p>
                             </div>
                         </div>
                     </div>
